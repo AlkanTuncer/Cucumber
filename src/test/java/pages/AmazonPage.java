@@ -16,13 +16,7 @@ public class AmazonPage {
     @FindBy(id = "twotabsearchtextbox")
     public WebElement searchBox;
 
-    @FindBy(xpath = "(//*[text()='Manchester City FC Puma Boys’ and Girls 2022/23 Replica Home Football Jersey'])[1]")
-    public WebElement firstProduct;
-
-    @FindBy(xpath = "//span[@id=\"productTitle\"]")
-    public WebElement firstProductTitle;
-
-    @FindBy(xpath = "//span[@class=\"a-size-base-plus a-color-base a-text-normal\"]")
-    public List<WebElement> productTitles;
+    @FindBy(xpath = "//span[@class=\"a-color-state a-text-bold\"]")
+    public WebElement searchResultText;
 
 }
