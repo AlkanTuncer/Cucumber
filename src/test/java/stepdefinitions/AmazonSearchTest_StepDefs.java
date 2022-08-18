@@ -46,7 +46,7 @@ public class AmazonSearchTest_StepDefs {
 
     // PARAMETRELİ FEATURE İÇİN AŞAGIDAKİ METOTLARI YAZDIK.
 
-    @Given("kullanici {string} sayfasina gider")
+    @Given("Kullanici {string} sayfasina gider")
     public void kullanici_sayfasina_gider(String istenenURL) {
         Driver.getDriver().get(ConfigurationReader.getProperty(istenenURL));
     }
