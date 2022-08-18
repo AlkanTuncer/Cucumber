@@ -43,5 +43,24 @@ public class AmazonSearchTest_StepDefs {
         Assert.assertTrue(amazonPage.searchResultText.getText().contains("flower"));
     }
 
+    @Given("kullanici {string} sayfasina gider")
+    public void kullanici_sayfasina_gider(String istenenURL) {
+        Driver.getDriver().get(ConfigurationReader.getProperty(istenenURL));
+    }
+    @Given("{string} icin arama yapar")
+    public void icin_arama_yapar(String arananKelime) {
+        amazonPage.searchBox.sendKeys(arananKelime + Keys.ENTER);
+
+    }
+    @Then("sonuclarin {string} icerdiğini test eder")
+    public void sonuclarin_icerdiğini_test_eder(String arananKelime) {
+        String sonucYazisiStr=amazonPage.searchResultText.getText();
+        Assert.assertTrue(sonucYazisiStr.contains(arananKelime));
+    }
+    @Then("sayfayi kapatir")
+    public void sayfayi_kapatir() {
+        Driver.closeDriver();
+    }
+
 
 }
