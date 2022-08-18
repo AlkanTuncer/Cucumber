@@ -43,6 +43,9 @@ public class AmazonSearchTest_StepDefs {
         Assert.assertTrue(amazonPage.searchResultText.getText().contains("flower"));
     }
 
+
+    // PARAMETRELİ FEATURE İÇİN AŞAGIDAKİ METOTLARI YAZDIK.
+
     @Given("kullanici {string} sayfasina gider")
     public void kullanici_sayfasina_gider(String istenenURL) {
         Driver.getDriver().get(ConfigurationReader.getProperty(istenenURL));
