@@ -52,12 +52,12 @@ public class AmazonSearchTest_StepDefs {
         amazonPage.searchBox.sendKeys(arananKelime + Keys.ENTER);
 
     }
-    @Then("sonuclarin {string} icerdiğini test eder")
+    @Then("Sonuclarin {string} icerdiğini test eder")
     public void sonuclarin_icerdiğini_test_eder(String arananKelime) {
         String sonucYazisiStr=amazonPage.searchResultText.getText();
         Assert.assertTrue(sonucYazisiStr.contains(arananKelime));
     }
-    @Then("sayfayi kapatir")
+    @Then("Sayfayi kapatir")
     public void sayfayi_kapatir() {
         Driver.closeDriver();
     }
