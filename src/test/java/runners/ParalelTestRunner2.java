@@ -14,4 +14,4 @@ import org.junit.runner.RunWith;
         tags = "@paralel2",
         dryRun = false
 )
-public class ParalelTestRunner2 { }
+public class ParalelTestRunner2 { }   // Paralel testleri Terminal'den calısıtıyoruz.  mvn clean verify
