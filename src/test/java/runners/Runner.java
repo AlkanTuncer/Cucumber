@@ -5,10 +5,10 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin="html:target/cucumber-reports.html",
+        plugin={"html:target/cucumber-reports.html"},
         features = "src/test/resources/features",
         glue = "stepdefinitions",
-        tags = "@webU", // feature içinde tag vererek istediğimiz testleri çalıştırabiliriz.
+        tags = "@homework", // feature içinde tag vererek istediğimiz testleri çalıştırabiliriz.
         dryRun = false)  // feature'daki metotları almak için 'true' kullanabiliriz. 'true' iken testleri calıstırmaz.
                          // 'false' iken belirtilen dosyadaki bütün testleri calıstırır. 'tags' verirsek sadece onları calıstırır.
 
