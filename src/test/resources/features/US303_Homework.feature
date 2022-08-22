@@ -8,6 +8,7 @@ Feature: US303 Homework
   And Delete butonunun gorunur oldugunu test eder
   Then Delete butonuna basarak butonu siler
   And Delete butonunun gorunmedigini test eder
+  And Sayfayi kapatir
 
 
 #Yeni bir test methodu olusturalim
