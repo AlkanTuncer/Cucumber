@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
                 "json:target/json-reports/Pcucumber2.json",
                 "junit:target/xml-report/Pcucumber2.xml"},
         glue = "stepdefinitions",
-        tags = "@paralel2",
+        tags = "@testparalel2",
         dryRun = false
 )
 public class ParalelTestRunner2 { }   // Paralel testleri Terminal'den calısıtıyoruz.  mvn clean verify

@@ -1,4 +1,4 @@
-@webU
+@webu @testparalel1
 Feature: US302 WebUniversity Window Handle TASK
 
   Scenario Outline: TC16 Window Handle with Reusable Methods

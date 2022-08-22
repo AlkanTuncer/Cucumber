@@ -1,4 +1,4 @@
-@homework
+@homework @testparalel2
 Feature: US303 Homework
 
   Scenario: TC Homework
