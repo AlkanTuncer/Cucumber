@@ -1,3 +1,4 @@
+@paralel2
 Feature: US102 Amazon Search Test with Background
 
   Background: Amazon sayfasına gider
