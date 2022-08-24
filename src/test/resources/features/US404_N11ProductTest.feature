@@ -1,3 +1,4 @@
+@n11
 Feature: US404 N11 Product Test
 
   Scenario Outline: Go to N11 Website and add product to favorites then delete from the favorites
